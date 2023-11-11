@@ -1,13 +1,13 @@
 import React from 'react';
-import { AiFillInstagram, AiOutlineTwitter} from 'react-icons/ai';
+import { AiFillFacebook} from 'react-icons/ai';
 
 const Footer = () => {
   return (
     <div className="footer-container">
       <p>2022 RGO-Lipa All rights reserverd</p>
+      
       <p className="icons">
-        <AiFillInstagram />
-        <AiOutlineTwitter />
+        <AiFillFacebook  onClick={() => window.open('https://www.facebook.com/BatStateULipaRGO')} />
       </p>
     </div>
   )

@@ -3,7 +3,7 @@ import { client } from '../lib/client';
 import { Product, FooterBanner, HeroBanner } from '../components';
 
 
-const Home = ({ products, bannerData}) => (
+const Home = ({ products, bannerData, footerBannerData}) => (
     <div>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
       <div className="products-heading">
@@ -15,7 +15,7 @@ const Home = ({ products, bannerData}) => (
       {products?.map((product) => <Product key={product._id} product={product} />)}
       </div>
 
-      <FooterBanner footerBanner={bannerData && bannerData[0]} />
+      <FooterBanner footerBanner={footerBannerData && footerBannerData[0]} />
     </div>
     );
 
@@ -25,9 +25,12 @@ const Home = ({ products, bannerData}) => (
     
       const bannerQuery = '*[_type == "banner"]';
       const bannerData = await client.fetch(bannerQuery);
+
+      const footerBannerQuery = '*[_type == "footerBanner"]';
+      const footerBannerData = await client.fetch(footerBannerQuery);
     
       return {
-        props: { products, bannerData }
+        props: { products, bannerData, footerBannerData}
       }
     }
 

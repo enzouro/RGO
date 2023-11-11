@@ -1,6 +1,6 @@
 export default {
-    name: 'banner',
-    title: 'Hero Banner',
+    name: 'footerBanner',
+    title: 'Footer Banner',
     type: 'document',
     fields: [
         {
@@ -16,6 +16,7 @@ export default {
             title: 'ButtonText',
             type: 'string',
         },
+
         {
             name: 'desc',
             title: 'Desc',
