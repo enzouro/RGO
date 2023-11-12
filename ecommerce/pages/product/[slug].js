@@ -14,7 +14,7 @@ const ProductDetails = ({ product, products }) => {
       <div className="product-detail-container">
         <div>
           <div className="image-container">
-            <img src={urlFor(image && image[index])} className="product-detail-image" />
+            <img src={urlFor(image && image[index])} className="product-detail-image" alt="product-image"/>
           </div>
           <div className="small-images-container">
             {image?.map((item, i) => (
@@ -40,7 +40,7 @@ const ProductDetails = ({ product, products }) => {
       </div>
 
       <div className="maylike-products-wrapper">
-          <h2>You may also like</h2>
+          <h2>Check the Other Products</h2>
           <div className="marquee">
             <div className="maylike-products-container track">
               {products.map((item) => (

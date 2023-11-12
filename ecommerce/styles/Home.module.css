@@ -114,3 +114,31 @@
       flex-direction: column;
     }
   }
+  /* Home.module.css */
+
+.sortAndSearchContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sortOptions,
+.searchBar {
+  display: flex;
+  align-items: center;
+}
+
+.sortOptions label,
+.searchBar label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.sortOptions select,
+.searchBar input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 20px;
+}
