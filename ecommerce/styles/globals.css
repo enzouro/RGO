@@ -1,3 +1,4 @@
+
 html, 
 body, * {
   padding: 0;
@@ -257,7 +258,7 @@ span.text-red {
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 16px;
-    /* color: black; */
+    
     align-self: flex-end;
   }
 
