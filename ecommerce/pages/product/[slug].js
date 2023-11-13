@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
-
+import Link from 'next/link';
+import { BiChevronsLeft } from "react-icons/bi";
 import { client, urlFor } from '../../lib/client';
 import { Product } from '../../components';
 
@@ -11,6 +11,9 @@ const ProductDetails = ({ product, products }) => {
 
   return (
     <div>
+      <div className="back-button">
+        <Link href="/"> <BiChevronsLeft /> </Link>
+      </div>
       <div className="product-detail-container">
         <div>
           <div className="image-container">

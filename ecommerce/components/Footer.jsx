@@ -4,7 +4,7 @@ import { AiFillFacebook} from 'react-icons/ai';
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>2022 RGO-Lipa All rights reserverd</p>
+      <p>2023 RGO-Lipa All Rights Reserved</p>
       
       <p className="icons">
         <AiFillFacebook  onClick={() => window.open('https://www.facebook.com/BatStateULipaRGO')} />

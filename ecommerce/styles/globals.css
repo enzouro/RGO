@@ -199,7 +199,10 @@ span.text-red {
   line-height: 0.9;
   width: 100%;
 }
-
+.back-button{
+  font-size: 50px;
+  color: #990000;
+}
 .hero-banner-container .small-text {
   font-size: 20px;
 }
@@ -513,7 +516,7 @@ span.text-red {
   display: flex;
   gap: 40px;
   margin: 100px;
-  margin-top: 60px;
+  margin-top: 30px;
   color: #990000;
 }
 
